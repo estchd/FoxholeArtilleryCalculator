@@ -60,7 +60,7 @@ namespace ArtilleryGuide
 
             hops = new ObservableCollection<RangeInformation>();
 
-            hops.Add(new RangeInformation() { RangeName = "Last Hop to Gun", Azimuth = 180.0, Distance = 100.0 });
+            hops.Add(new RangeInformation() { RangeName = "Spotter to Gun", Azimuth = 180.0, Distance = 100.0 });
             hops[0].PropertyChanged += ListItem_PropertyChanged;
             HopsList.ItemsSource = hops;
             UpdateRemoveHopButton();
